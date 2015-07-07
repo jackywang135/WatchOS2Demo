@@ -24,6 +24,8 @@
 		C7D0B4E71B4C0D2300288F6F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4E61B4C0D2300288F6F /* GlanceController.swift */; };
 		C7D0B4E91B4C0D2300288F6F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4E81B4C0D2300288F6F /* ComplicationController.swift */; };
 		C7D0B4EB1B4C0D2300288F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B4EA1B4C0D2300288F6F /* Assets.xcassets */; };
+		C7D0B5011B4C10FE00288F6F /* MenuTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */; };
+		C7D0B5041B4C140000288F6F /* PickerListStyleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		C7D0B4E81B4C0D2300288F6F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		C7D0B4EA1B4C0D2300288F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D0B4EC1B4C0D2300288F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableRowController.swift; sourceTree = "<group>"; };
+		C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerListStyleInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				C7D0B4E01B4C0D2300288F6F /* InterfaceController.swift */,
+				C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */,
+				C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */,
 				C7D0B4E21B4C0D2300288F6F /* ExtensionDelegate.swift */,
 				C7D0B4E41B4C0D2300288F6F /* NotificationController.swift */,
 				C7D0B4E61B4C0D2300288F6F /* GlanceController.swift */,
@@ -447,10 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D0B5041B4C140000288F6F /* PickerListStyleInterfaceController.swift in Sources */,
 				C7D0B4E51B4C0D2300288F6F /* NotificationController.swift in Sources */,
 				C7D0B4E31B4C0D2300288F6F /* ExtensionDelegate.swift in Sources */,
 				C7D0B4E91B4C0D2300288F6F /* ComplicationController.swift in Sources */,
 				C7D0B4E11B4C0D2300288F6F /* InterfaceController.swift in Sources */,
+				C7D0B5011B4C10FE00288F6F /* MenuTableRowController.swift in Sources */,
 				C7D0B4E71B4C0D2300288F6F /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
