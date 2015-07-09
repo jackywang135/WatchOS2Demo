@@ -16,21 +16,13 @@ class PickerListStyleInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        listStylePicker.setItems(setUpPickerItems())
+		let items: [WKPickerItem] = (0..<players.count).map {
+			let item = WKPickerItem()
+			item.title = players[$0]
+			item.accessoryImage = WKImage(imageName: players[$0])
+			return item
+		}
+        listStylePicker.setItems(items)
     }
 }
 
-extension PickerListStyleInterfaceController {
-    func setUpPickerItems() -> [WKPickerItem] {
-        let names = ["Zonble", "Willy", "Steven", "Abe", "Oliver", "Green", "Will", "Michael", "Joe", "Daniel", "Jacky"]
-        var namesPickerItems = [WKPickerItem]()
-        for name in names {
-            let item = WKPickerItem()
-            item.title = name
-            item.accessoryImage = WKImage(imageName: "KKBOX")
-            namesPickerItems.append(item)
-        }
-        return namesPickerItems
-    }
-    
-}

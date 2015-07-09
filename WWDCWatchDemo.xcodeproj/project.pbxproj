@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72B27021B4E4FF800EA6EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72B27011B4E4FF800EA6EF2 /* Main.storyboard */; };
+		C72B276B1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */; };
 		C7D0B4A61B4C0D2200288F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4A51B4C0D2200288F6F /* AppDelegate.swift */; };
 		C7D0B4A81B4C0D2200288F6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4A71B4C0D2200288F6F /* ViewController.swift */; };
-		C7D0B4AB1B4C0D2200288F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B4A91B4C0D2200288F6F /* Main.storyboard */; };
 		C7D0B4AD1B4C0D2200288F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B4AC1B4C0D2200288F6F /* Assets.xcassets */; };
 		C7D0B4B01B4C0D2200288F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B4AE1B4C0D2200288F6F /* LaunchScreen.storyboard */; };
 		C7D0B4BB1B4C0D2200288F6F /* WWDCWatchDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4BA1B4C0D2200288F6F /* WWDCWatchDemoTests.swift */; };
@@ -26,6 +27,8 @@
 		C7D0B4EB1B4C0D2300288F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B4EA1B4C0D2300288F6F /* Assets.xcassets */; };
 		C7D0B5011B4C10FE00288F6F /* MenuTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */; };
 		C7D0B5041B4C140000288F6F /* PickerListStyleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */; };
+		C7F57F081B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F57F071B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift */; };
+		C7F57F0A1B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F57F091B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,10 +88,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C72B27011B4E4FF800EA6EF2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerMenuInterfaceController.swift; sourceTree = "<group>"; };
 		C7D0B4A21B4C0D2200288F6F /* WWDCWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D0B4A51B4C0D2200288F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D0B4A71B4C0D2200288F6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7D0B4AA1B4C0D2200288F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7D0B4AC1B4C0D2200288F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D0B4AF1B4C0D2200288F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7D0B4B11B4C0D2200288F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		C7D0B4EC1B4C0D2300288F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableRowController.swift; sourceTree = "<group>"; };
 		C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerListStyleInterfaceController.swift; sourceTree = "<group>"; };
+		C7F57F071B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerStackStyleInterfaceController.swift; sourceTree = "<group>"; };
+		C7F57F091B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerSequenceStyleInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +182,8 @@
 			children = (
 				C7D0B4A51B4C0D2200288F6F /* AppDelegate.swift */,
 				C7D0B4A71B4C0D2200288F6F /* ViewController.swift */,
-				C7D0B4A91B4C0D2200288F6F /* Main.storyboard */,
 				C7D0B4AC1B4C0D2200288F6F /* Assets.xcassets */,
+				C72B27011B4E4FF800EA6EF2 /* Main.storyboard */,
 				C7D0B4AE1B4C0D2200288F6F /* LaunchScreen.storyboard */,
 				C7D0B4B11B4C0D2200288F6F /* Info.plist */,
 			);
@@ -216,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D0B4E01B4C0D2300288F6F /* InterfaceController.swift */,
-				C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */,
+				C7F57F061B4E5F4F000B14C4 /* Picker */,
 				C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */,
 				C7D0B4E21B4C0D2300288F6F /* ExtensionDelegate.swift */,
 				C7D0B4E41B4C0D2300288F6F /* NotificationController.swift */,
@@ -235,6 +241,17 @@
 				C7D0B4DF1B4C0D2300288F6F /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7F57F061B4E5F4F000B14C4 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */,
+				C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */,
+				C7F57F071B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift */,
+				C7F57F091B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift */,
+			);
+			name = Picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,9 +401,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72B27021B4E4FF800EA6EF2 /* Main.storyboard in Resources */,
 				C7D0B4B01B4C0D2200288F6F /* LaunchScreen.storyboard in Resources */,
 				C7D0B4AD1B4C0D2200288F6F /* Assets.xcassets in Resources */,
-				C7D0B4AB1B4C0D2200288F6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,12 +470,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F57F0A1B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift in Sources */,
 				C7D0B5041B4C140000288F6F /* PickerListStyleInterfaceController.swift in Sources */,
 				C7D0B4E51B4C0D2300288F6F /* NotificationController.swift in Sources */,
 				C7D0B4E31B4C0D2300288F6F /* ExtensionDelegate.swift in Sources */,
+				C7F57F081B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift in Sources */,
 				C7D0B4E91B4C0D2300288F6F /* ComplicationController.swift in Sources */,
 				C7D0B4E11B4C0D2300288F6F /* InterfaceController.swift in Sources */,
 				C7D0B5011B4C10FE00288F6F /* MenuTableRowController.swift in Sources */,
+				C72B276B1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift in Sources */,
 				C7D0B4E71B4C0D2300288F6F /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,14 +509,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7D0B4A91B4C0D2200288F6F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7D0B4AA1B4C0D2200288F6F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7D0B4AE1B4C0D2200288F6F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -754,6 +766,7 @@
 				C7D0B4F11B4C0D2300288F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7D0B4F31B4C0D2300288F6F /* Build configuration list for PBXNativeTarget "WWDCWatchDemo WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -762,6 +775,7 @@
 				C7D0B4F51B4C0D2300288F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7D0B4F71B4C0D2300288F6F /* Build configuration list for PBXNativeTarget "WWDCWatchDemo" */ = {
 			isa = XCConfigurationList;
@@ -770,6 +784,7 @@
 				C7D0B4F91B4C0D2300288F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7D0B4FA1B4C0D2300288F6F /* Build configuration list for PBXNativeTarget "WWDCWatchDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -778,6 +793,7 @@
 				C7D0B4FC1B4C0D2300288F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7D0B4FD1B4C0D2300288F6F /* Build configuration list for PBXNativeTarget "WWDCWatchDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -786,6 +802,7 @@
 				C7D0B4FF1B4C0D2300288F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
