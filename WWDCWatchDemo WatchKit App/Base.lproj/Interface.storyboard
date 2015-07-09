@@ -86,7 +86,6 @@
                         </group>
                     </items>
                     <connections>
-                        <outlet property="group" destination="acq-2I-nhl" id="MWW-4s-U6D"/>
                         <outlet property="picker" destination="3Fg-sP-8Za" id="dsV-Tj-bgI"/>
                     </connections>
                 </controller>
