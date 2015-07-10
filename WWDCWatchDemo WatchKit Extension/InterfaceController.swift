@@ -17,6 +17,9 @@ struct Storyboard {
 		static let pickerListStyle = "PickerListStyleInterfaceController"
 		static let pickerStackStyle = "PickerStackStyleInterfaceController"
 		static let pickerSequenceStyle = "PickerSequenceStyleInterfaceController"
+        static let audioRecording = "AudioRecordingInterfaceController"
+        static let movie = "MovieInterfaceController"
+        static let movieMenu = "MovieMenuInterfaceController"
 	}
 }
 
@@ -24,7 +27,7 @@ class InterfaceController: WKInterfaceController {
 
 	@IBOutlet var table: WKInterfaceTable!
 	
-	let menuOptions = ["Picker"]
+	let menuOptions = ["Picker", "Movie", "Audio Recording"]
 	
 	override func willActivate() {
 		setUpTable(menuOptions)
@@ -37,11 +40,15 @@ class InterfaceController: WKInterfaceController {
 			rowController.label.setText(menu[index])
 		}
 	}
-	
+	let url = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("jump", ofType: "MOV")!)
 	override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
 		switch menuOptions[rowIndex] {
 			case "Picker":
-			pushControllerWithName(Storyboard.IC.pickerMenu, context: nil)
+                pushControllerWithName(Storyboard.IC.pickerMenu, context: nil)
+            case "Movie":
+                pushControllerWithName(Storyboard.IC.movieMenu, context: nil)
+            case "Audio Recording":
+                pushControllerWithName(Storyboard.IC.audioRecording, context: nil)
 		default: return
 			
 		}

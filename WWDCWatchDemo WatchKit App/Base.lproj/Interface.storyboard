@@ -30,7 +30,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="181" y="433"/>
+            <point key="canvasLocation" x="192" y="412.5"/>
         </scene>
         <!--PickerMenuInterfaceController-->
         <scene sceneID="A0Y-ei-REF">
@@ -57,7 +57,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="425" y="334.5"/>
+            <point key="canvasLocation" x="401" y="150.5"/>
         </scene>
         <!--PickerStackStyleInterfaceController-->
         <scene sceneID="OhZ-Qk-uWz">
@@ -65,20 +65,21 @@
                 <controller identifier="PickerStackStyleInterfaceController" hidesWhenLoading="NO" id="jJc-Ry-doL" customClass="PickerStackStyleInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Who's your favorite all time?" numberOfLines="2" id="sny-G6-lue"/>
-                        <picker width="1" height="100" alignment="left" style="stack" id="MMq-hK-eBQ"/>
+                        <picker width="1" height="100" alignment="left" style="stack" indicatorMode="shownWhileFocused" id="MMq-hK-eBQ"/>
                     </items>
                     <connections>
                         <outlet property="picker" destination="MMq-hK-eBQ" id="5QR-qM-kaw"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="633" y="404.5"/>
+            <point key="canvasLocation" x="584" y="178.5"/>
         </scene>
         <!--PickerSequenceStyleInterfaceController-->
         <scene sceneID="28E-14-Njm">
             <objects>
                 <controller identifier="PickerSequenceStyleInterfaceController" hidesWhenLoading="NO" id="JIm-A6-WeL" customClass="PickerSequenceStyleInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
                     <items>
+                        <label alignment="left" text="Who's your favorite all time?" numberOfLines="2" id="XcN-41-e1X"/>
                         <group width="1" alignment="left" id="acq-2I-nhl">
                             <items>
                                 <picker width="1" height="100" alignment="left" style="sequence" focusStyle="sequence" id="3Fg-sP-8Za"/>
@@ -90,13 +91,14 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="638" y="671"/>
+            <point key="canvasLocation" x="584" y="418.5"/>
         </scene>
         <!--PickerListStyleInterfaceController-->
         <scene sceneID="jaO-yl-dmS">
             <objects>
                 <controller identifier="PickerListStyleInterfaceController" hidesWhenLoading="NO" id="dW2-Yy-8y1" customClass="PickerListStyleInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
                     <items>
+                        <label alignment="left" text="Who's your favorite all time?" numberOfLines="2" id="iE3-m9-6wp"/>
                         <picker width="1" height="100" alignment="left" focusStyle="stack" id="ZsI-xi-az2"/>
                     </items>
                     <connections>
@@ -104,7 +106,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="633" y="142"/>
+            <point key="canvasLocation" x="584" y="-55.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -117,7 +119,61 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="214" y="1027"/>
+        </scene>
+        <!--AudioRecordingInterfaceController-->
+        <scene sceneID="gHw-sb-zBa">
+            <objects>
+                <controller identifier="AudioRecordingInterfaceController" hidesWhenLoading="NO" id="Bg6-Ge-AIw" customClass="AudioRecordingInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Start Recording" id="SkK-n5-Ooq">
+                            <connections>
+                                <action selector="startRecording" destination="Bg6-Ge-AIw" id="8rj-eO-HXJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="584" y="672.5"/>
+        </scene>
+        <!--MovieMenuInterfaceController-->
+        <scene sceneID="5Zt-S6-Hxy">
+            <objects>
+                <controller identifier="MovieMenuInterfaceController" hidesWhenLoading="NO" id="FJo-7O-QHE" customClass="MovieMenuInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Movie Player Embeded in UI" id="HX4-0u-cOc">
+                            <connections>
+                                <segue destination="8cs-4N-iE5" kind="push" id="PhK-Aa-U42"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Present Movie Player Modally " id="TCO-n4-JQm">
+                            <connections>
+                                <action selector="presentMediaPlayerController" destination="FJo-7O-QHE" id="jWR-ud-P13"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="584" y="925.5"/>
+        </scene>
+        <!--MovieInterfaceController-->
+        <scene sceneID="WUg-wq-2W0">
+            <objects>
+                <controller identifier="MovieInterfaceController" hidesWhenLoading="NO" id="8cs-4N-iE5" customClass="MovieInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Jumping on Giant Dragon" numberOfLines="2" id="Xrb-KK-O6h"/>
+                        <movie width="1" height="100" alignment="left" videoGravity="resizeAspectFill" id="wca-AM-O6E"/>
+                        <dateLabel alignment="left" id="zHf-GE-YSP">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                    <connections>
+                        <outlet property="moviePlayer" destination="wca-AM-O6E" id="n1y-AQ-TrV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="821" y="925.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -133,14 +189,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="235" y="1001"/>
+            <point key="canvasLocation" x="214" y="1258"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="WWDCWatchDemo_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="553" y="1001"/>
+            <point key="canvasLocation" x="481" y="1286"/>
         </scene>
     </scenes>
 </document>
