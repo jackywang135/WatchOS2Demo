@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 
+let players = ["kobe", "jordan", "love", "westbrook", "duncan", "griffin", "magic", "shaq", "durant", "bird", "carmelo", "rose", "paul", "iverson", "curry"]
 
 class PickerListStyleInterfaceController: WKInterfaceController {
 

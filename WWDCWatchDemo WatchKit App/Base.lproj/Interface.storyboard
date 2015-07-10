@@ -10,54 +10,65 @@
             <objects>
                 <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
                     <items>
-                        <table alignment="left" id="Na0-pI-dlC">
-                            <items>
-                                <tableRow identifier="MenuTableRowController" id="HNn-uc-JMl" customClass="MenuTableRowController" customModule="WWDCWatchDemo_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="7AL-c2-Ds2">
-                                        <items>
-                                            <label width="1" height="1" alignment="left" text="Picker" id="H58-VB-OIt"/>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <outlet property="label" destination="H58-VB-OIt" id="2yh-8V-9CD"/>
-                                    </connections>
-                                </tableRow>
-                            </items>
-                        </table>
+                        <button width="1" alignment="left" title="Picker" id="067-lJ-Ter">
+                            <connections>
+                                <segue destination="aqD-Wi-Hjk" kind="push" id="nKu-ka-3kF"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Movie" id="f2z-te-rQ6">
+                            <connections>
+                                <segue destination="FJo-7O-QHE" kind="push" id="fIG-vp-IIU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Audio" id="c4R-Xc-k2e">
+                            <connections>
+                                <segue destination="OEb-i6-vJ2" kind="push" id="REv-UT-Sev"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Recording" id="ZPh-s9-9jG">
+                            <connections>
+                                <segue destination="Bg6-Ge-AIw" kind="push" id="OZk-TD-fof"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Alert" id="nGw-Mb-5CO">
+                            <connections>
+                                <segue destination="p53-sQ-o9O" kind="push" id="J8F-r7-nL6"/>
+                            </connections>
+                        </button>
                     </items>
-                    <connections>
-                        <outlet property="table" destination="Na0-pI-dlC" id="uzC-FF-qvr"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="146" y="280.5"/>
         </scene>
-        <!--PickerMenuInterfaceController-->
+        <!--Interface Controller-->
         <scene sceneID="A0Y-ei-REF">
             <objects>
-                <controller identifier="PickerMenuInterfaceController" hidesWhenLoading="NO" id="aqD-Wi-Hjk" customClass="PickerMenuInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                <controller hidesWhenLoading="NO" id="aqD-Wi-Hjk">
                     <items>
-                        <table alignment="left" id="KkF-Pe-Xg5">
-                            <items>
-                                <tableRow identifier="MenuTableRowController" id="5De-qx-xmF" customClass="MenuTableRowController" customModule="WWDCWatchDemo_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="ty7-u4-qfN">
-                                        <items>
-                                            <label alignment="left" verticalAlignment="center" text="Picker Menu" id="S2L-eQ-p94"/>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <outlet property="label" destination="S2L-eQ-p94" id="zgW-6y-Oa7"/>
-                                    </connections>
-                                </tableRow>
-                            </items>
-                        </table>
+                        <button width="1" alignment="left" title="List" id="5rl-Qv-6lA">
+                            <connections>
+                                <segue destination="dW2-Yy-8y1" kind="push" id="jyE-Fc-1b6"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stack" id="lD5-uR-C2S">
+                            <connections>
+                                <segue destination="jJc-Ry-doL" kind="push" id="hxb-eG-9EU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sequence" id="1eV-dJ-S7r">
+                            <connections>
+                                <segue destination="JIm-A6-WeL" kind="push" id="SZM-7v-xd5"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Coordinating Images" id="6ez-PY-f46">
+                            <connections>
+                                <segue destination="zF1-VU-6iz" kind="push" id="lIY-We-X29"/>
+                            </connections>
+                        </button>
                     </items>
-                    <connections>
-                        <outlet property="table" destination="KkF-Pe-Xg5" id="g33-gc-mcl"/>
-                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="416" y="107.5"/>
+            <point key="canvasLocation" x="114" y="-214.5"/>
         </scene>
         <!--PickerStackStyleInterfaceController-->
         <scene sceneID="OhZ-Qk-uWz">
@@ -72,7 +83,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="584" y="178.5"/>
+            <point key="canvasLocation" x="536" y="-579.5"/>
         </scene>
         <!--PickerSequenceStyleInterfaceController-->
         <scene sceneID="28E-14-Njm">
@@ -91,7 +102,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="584" y="418.5"/>
+            <point key="canvasLocation" x="716" y="-579.5"/>
         </scene>
         <!--AlertInterfaceController-->
         <scene sceneID="4J1-aH-k05">
@@ -121,7 +132,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="814" y="546.5"/>
+            <point key="canvasLocation" x="450" y="630.5"/>
         </scene>
         <!--PickerListStyleInterfaceController-->
         <scene sceneID="jaO-yl-dmS">
@@ -136,7 +147,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="584" y="-55.5"/>
+            <point key="canvasLocation" x="352" y="-579.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -164,7 +175,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="584" y="672.5"/>
+            <point key="canvasLocation" x="764" y="616.5"/>
         </scene>
         <!--MovieMenuInterfaceController-->
         <scene sceneID="5Zt-S6-Hxy">
@@ -184,7 +195,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="584" y="925.5"/>
+            <point key="canvasLocation" x="412" y="-29.5"/>
         </scene>
         <!--AudioMenuInterfaceController-->
         <scene sceneID="sUz-Cl-hEz">
@@ -204,7 +215,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="584" y="1232.5"/>
+            <point key="canvasLocation" x="450" y="280.5"/>
         </scene>
         <!--PickerCoordinatingImagesInterfaceController-->
         <scene sceneID="35R-Q4-dTl">
@@ -223,7 +234,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="770" y="178.5"/>
+            <point key="canvasLocation" x="882" y="-573.5"/>
         </scene>
         <!--MovieInterfaceController-->
         <scene sceneID="WUg-wq-2W0">
@@ -242,7 +253,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="821" y="925.5"/>
+            <point key="canvasLocation" x="598" y="-29.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

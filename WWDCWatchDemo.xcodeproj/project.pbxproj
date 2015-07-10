@@ -10,7 +10,6 @@
 		C727F75A1B4EC7F500AB6D13 /* MovieInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C727F7591B4EC7F500AB6D13 /* MovieInterfaceController.swift */; };
 		C727F75C1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C727F75B1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift */; };
 		C72B27021B4E4FF800EA6EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72B27011B4E4FF800EA6EF2 /* Main.storyboard */; };
-		C72B276B1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */; };
 		C74385521B4FC17F00A523DA /* AudioInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74385511B4FC17F00A523DA /* AudioInterfaceController.swift */; };
 		C74385541B4FC1BF00A523DA /* AudioMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */; };
 		C74A823C1B4FE9F20097C682 /* NetworkingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A823B1B4FE9F20097C682 /* NetworkingInterfaceController.swift */; };
@@ -104,7 +103,6 @@
 		C727F75E1B4F96A900AB6D13 /* WWDCWatchDemo WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WWDCWatchDemo WatchKit App.entitlements"; sourceTree = "<group>"; };
 		C727F75F1B4F96B600AB6D13 /* WWDCWatchDemo WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WWDCWatchDemo WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		C72B27011B4E4FF800EA6EF2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
-		C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerMenuInterfaceController.swift; sourceTree = "<group>"; };
 		C74385511B4FC17F00A523DA /* AudioInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioInterfaceController.swift; sourceTree = "<group>"; };
 		C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMenuInterfaceController.swift; sourceTree = "<group>"; };
 		C74A823B1B4FE9F20097C682 /* NetworkingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingInterfaceController.swift; sourceTree = "<group>"; };
@@ -321,7 +319,6 @@
 		C7F57F061B4E5F4F000B14C4 /* Picker */ = {
 			isa = PBXGroup;
 			children = (
-				C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */,
 				C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */,
 				C7F57F071B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift */,
 				C7F57F091B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift */,
@@ -588,7 +585,6 @@
 				C7D0B4E11B4C0D2300288F6F /* InterfaceController.swift in Sources */,
 				C7D0B5011B4C10FE00288F6F /* MenuTableRowController.swift in Sources */,
 				C7F5423C1B4FB1F200E5B55D /* MovieMenuInterfaceController.swift in Sources */,
-				C72B276B1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift in Sources */,
 				C7D0B4E71B4C0D2300288F6F /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
