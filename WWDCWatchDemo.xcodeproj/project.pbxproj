@@ -11,6 +11,8 @@
 		C727F75C1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C727F75B1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift */; };
 		C72B27021B4E4FF800EA6EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C72B27011B4E4FF800EA6EF2 /* Main.storyboard */; };
 		C72B276B1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */; };
+		C74385521B4FC17F00A523DA /* AudioInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74385511B4FC17F00A523DA /* AudioInterfaceController.swift */; };
+		C74385541B4FC1BF00A523DA /* AudioMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */; };
 		C7D0B4A61B4C0D2200288F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4A51B4C0D2200288F6F /* AppDelegate.swift */; };
 		C7D0B4A81B4C0D2200288F6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4A71B4C0D2200288F6F /* ViewController.swift */; };
 		C7D0B4AD1B4C0D2200288F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B4AC1B4C0D2200288F6F /* Assets.xcassets */; };
@@ -31,6 +33,7 @@
 		C7D0B5041B4C140000288F6F /* PickerListStyleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */; };
 		C7F5423A1B4FAEFF00E5B55D /* jump.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C7F542391B4FAEFF00E5B55D /* jump.MOV */; };
 		C7F5423C1B4FB1F200E5B55D /* MovieMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5423B1B4FB1F200E5B55D /* MovieMenuInterfaceController.swift */; };
+		C7F542421B4FBDCC00E5B55D /* One Man Can Change the World.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C7F542411B4FBDCC00E5B55D /* One Man Can Change the World.mp3 */; };
 		C7F57F081B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F57F071B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift */; };
 		C7F57F0A1B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F57F091B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +102,8 @@
 		C727F75F1B4F96B600AB6D13 /* WWDCWatchDemo WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WWDCWatchDemo WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		C72B27011B4E4FF800EA6EF2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerMenuInterfaceController.swift; sourceTree = "<group>"; };
+		C74385511B4FC17F00A523DA /* AudioInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioInterfaceController.swift; sourceTree = "<group>"; };
+		C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMenuInterfaceController.swift; sourceTree = "<group>"; };
 		C7D0B4A21B4C0D2200288F6F /* WWDCWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D0B4A51B4C0D2200288F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D0B4A71B4C0D2200288F6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +133,7 @@
 		C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerListStyleInterfaceController.swift; sourceTree = "<group>"; };
 		C7F542391B4FAEFF00E5B55D /* jump.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = jump.MOV; sourceTree = "<group>"; };
 		C7F5423B1B4FB1F200E5B55D /* MovieMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieMenuInterfaceController.swift; sourceTree = "<group>"; };
+		C7F542411B4FBDCC00E5B55D /* One Man Can Change the World.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Man Can Change the World.mp3"; sourceTree = "<group>"; };
 		C7F57F071B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerStackStyleInterfaceController.swift; sourceTree = "<group>"; };
 		C7F57F091B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerSequenceStyleInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +170,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74385501B4FC0F900A523DA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C74385511B4FC17F00A523DA /* AudioInterfaceController.swift */,
+				C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
 		C7D0B4991B4C0D2200288F6F = {
 			isa = PBXGroup;
 			children = (
@@ -238,13 +253,15 @@
 				C7D0B4E01B4C0D2300288F6F /* InterfaceController.swift */,
 				C7F57F061B4E5F4F000B14C4 /* Picker */,
 				C7F5423D1B4FB28E00E5B55D /* Movie */,
-				C727F75B1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift */,
+				C74385501B4FC0F900A523DA /* Audio */,
+				C7F5423E1B4FB79900E5B55D /* Audio Recording */,
 				C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */,
 				C7D0B4E21B4C0D2300288F6F /* ExtensionDelegate.swift */,
 				C7D0B4E41B4C0D2300288F6F /* NotificationController.swift */,
 				C7D0B4E61B4C0D2300288F6F /* GlanceController.swift */,
 				C7D0B4E81B4C0D2300288F6F /* ComplicationController.swift */,
 				C7F542391B4FAEFF00E5B55D /* jump.MOV */,
+				C7F542411B4FBDCC00E5B55D /* One Man Can Change the World.mp3 */,
 				C7D0B4EA1B4C0D2300288F6F /* Assets.xcassets */,
 				C7D0B4EC1B4C0D2300288F6F /* Info.plist */,
 				C7D0B4DE1B4C0D2300288F6F /* Supporting Files */,
@@ -267,6 +284,14 @@
 				C7F5423B1B4FB1F200E5B55D /* MovieMenuInterfaceController.swift */,
 			);
 			name = Movie;
+			sourceTree = "<group>";
+		};
+		C7F5423E1B4FB79900E5B55D /* Audio Recording */ = {
+			isa = PBXGroup;
+			children = (
+				C727F75B1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift */,
+			);
+			name = "Audio Recording";
 			sourceTree = "<group>";
 		};
 		C7F57F061B4E5F4F000B14C4 /* Picker */ = {
@@ -485,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F5423A1B4FAEFF00E5B55D /* jump.MOV in Resources */,
+				C7F542421B4FBDCC00E5B55D /* One Man Can Change the World.mp3 in Resources */,
 				C7D0B4EB1B4C0D2300288F6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,8 +551,10 @@
 				C7F57F0A1B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift in Sources */,
 				C7D0B5041B4C140000288F6F /* PickerListStyleInterfaceController.swift in Sources */,
 				C7D0B4E51B4C0D2300288F6F /* NotificationController.swift in Sources */,
+				C74385541B4FC1BF00A523DA /* AudioMenuInterfaceController.swift in Sources */,
 				C7D0B4E31B4C0D2300288F6F /* ExtensionDelegate.swift in Sources */,
 				C7F57F081B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift in Sources */,
+				C74385521B4FC17F00A523DA /* AudioInterfaceController.swift in Sources */,
 				C727F75C1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift in Sources */,
 				C7D0B4E91B4C0D2300288F6F /* ComplicationController.swift in Sources */,
 				C7D0B4E11B4C0D2300288F6F /* InterfaceController.swift in Sources */,

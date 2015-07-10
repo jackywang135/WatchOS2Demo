@@ -14,16 +14,8 @@ class AudioRecordingInterfaceController: WKInterfaceController {
     
     let action = WKAlertAction(title: "Dismiss", style:.Default) {}
 
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
-        
-    }
-
     @IBAction func startRecording() {
-        let fileManager = NSFileManager.defaultManager()
-        let container = fileManager.containerURLForSecurityApplicationGroupIdentifier("group.WWDCWatchDemo")!
-        let fileName = "demoAudio".stringByAppendingPathExtension("mp4")!
-        let audioFileURL = container.URLByAppendingPathComponent(fileName)
+        let audioFileURL = prepareFilePathURL()
         presentAudioRecordingControllerWithOutputURL(audioFileURL, preset: .NarrowBandSpeech, maximumDuration: 30.0, actionTitle: "save") { didSave, error in
             guard error == nil && didSave == true else {
                  self.showFailure()
@@ -31,6 +23,12 @@ class AudioRecordingInterfaceController: WKInterfaceController {
             }
             self.showSuccess()
         }
+    }
+    
+    func prepareFilePathURL() -> NSURL {
+        let container = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.WWDCWatchDemo")!
+        let fileName = "demoAudio".stringByAppendingPathExtension("mp4")!
+        return container.URLByAppendingPathComponent(fileName)
     }
     
     func showSuccess() {

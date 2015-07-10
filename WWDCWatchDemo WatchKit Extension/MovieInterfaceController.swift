@@ -19,5 +19,6 @@ class MovieInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         moviePlayer.setMovieURL(url)
+        moviePlayer.setPosterImage(WKImage(imageName: "jumpOnDragon"))
     }
 }
