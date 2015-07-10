@@ -16,7 +16,7 @@ class PickerMenuInterfaceController: WKInterfaceController {
 
 	@IBOutlet var table: WKInterfaceTable!
 	
-	let menuOptions = ["List", "Stack", "Sequence"]
+	let menuOptions = ["List", "Stack", "Sequence", "Coordinating Images"]
 	
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -39,6 +39,8 @@ class PickerMenuInterfaceController: WKInterfaceController {
 			pushControllerWithName(Storyboard.IC.pickerStackStyle, context: nil)
 		case "Sequence":
 			pushControllerWithName(Storyboard.IC.pickerSequenceStyle, context: nil)
+        case "Coordinating Images":
+            pushControllerWithName(Storyboard.IC.pickerCoordinatingImages, context: nil)
 		default: return
 		}
 	}

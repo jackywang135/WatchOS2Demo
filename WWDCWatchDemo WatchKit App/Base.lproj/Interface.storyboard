@@ -30,7 +30,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="192" y="412.5"/>
+            <point key="canvasLocation" x="146" y="280.5"/>
         </scene>
         <!--PickerMenuInterfaceController-->
         <scene sceneID="A0Y-ei-REF">
@@ -92,6 +92,36 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="584" y="418.5"/>
+        </scene>
+        <!--AlertInterfaceController-->
+        <scene sceneID="4J1-aH-k05">
+            <objects>
+                <controller identifier="AlertInterfaceController" hidesWhenLoading="NO" id="p53-sQ-o9O" customClass="AlertInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Alert" id="mdi-zX-zMm">
+                            <connections>
+                                <action selector="alert" destination="p53-sQ-o9O" id="2ay-nU-v29"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Side By Side" id="snm-ST-nGQ">
+                            <connections>
+                                <action selector="sideBySide" destination="p53-sQ-o9O" id="c5R-b3-84f"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Action Sheet" id="QUN-78-Yrd">
+                            <connections>
+                                <action selector="actionSheet" destination="p53-sQ-o9O" id="ZaK-Md-jpY"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="actionSheet" destination="QUN-78-Yrd" id="de1-08-eUX"/>
+                        <outlet property="alert" destination="mdi-zX-zMm" id="zhH-wd-syb"/>
+                        <outlet property="sideBySide" destination="snm-ST-nGQ" id="PIk-Td-TFl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="814" y="546.5"/>
         </scene>
         <!--PickerListStyleInterfaceController-->
         <scene sceneID="jaO-yl-dmS">
@@ -175,6 +205,25 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="584" y="1232.5"/>
+        </scene>
+        <!--PickerCoordinatingImagesInterfaceController-->
+        <scene sceneID="35R-Q4-dTl">
+            <objects>
+                <controller identifier="PickerCoordinatingImagesInterfaceController" hidesWhenLoading="NO" id="zF1-VU-6iz" customClass="PickerCoordinatingImagesInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <group width="120" height="120" alignment="center" verticalAlignment="center" backgroundImage="Play0" contentMode="scaleAspectFill" id="ds2-7u-Bx3">
+                            <items>
+                                <picker width="70" height="70" alignment="center" verticalAlignment="center" id="0He-a5-zqT"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="group" destination="ds2-7u-Bx3" id="VKf-Fm-gmr"/>
+                        <outlet property="picker" destination="0He-a5-zqT" id="ggw-0q-Ns8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="770" y="178.5"/>
         </scene>
         <!--MovieInterfaceController-->
         <scene sceneID="WUg-wq-2W0">

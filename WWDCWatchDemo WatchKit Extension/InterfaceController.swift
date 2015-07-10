@@ -17,6 +17,7 @@ struct Storyboard {
 		static let pickerListStyle = "PickerListStyleInterfaceController"
 		static let pickerStackStyle = "PickerStackStyleInterfaceController"
 		static let pickerSequenceStyle = "PickerSequenceStyleInterfaceController"
+        static let pickerCoordinatingImages = "PickerCoordinatingImagesInterfaceController"
         static let audioRecording = "AudioRecordingInterfaceController"
         static let movie = "MovieInterfaceController"
         static let movieMenu = "MovieMenuInterfaceController"
@@ -28,7 +29,7 @@ class InterfaceController: WKInterfaceController {
 
 	@IBOutlet var table: WKInterfaceTable!
 	
-	let menuOptions = ["Picker", "Movie", "Audio", "Audio Recording"]
+	let menuOptions = ["Picker", "Movie", "Audio", "Audio Recording", "Alert"]
 	
 	override func willActivate() {
 		setUpTable(menuOptions)

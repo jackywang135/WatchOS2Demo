@@ -13,6 +13,9 @@
 		C72B276B1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */; };
 		C74385521B4FC17F00A523DA /* AudioInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74385511B4FC17F00A523DA /* AudioInterfaceController.swift */; };
 		C74385541B4FC1BF00A523DA /* AudioMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */; };
+		C74A823C1B4FE9F20097C682 /* NetworkingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A823B1B4FE9F20097C682 /* NetworkingInterfaceController.swift */; };
+		C74A823E1B5005A10097C682 /* PickerCoordinatingImagesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A823D1B5005A10097C682 /* PickerCoordinatingImagesInterfaceController.swift */; };
+		C74A82401B50110D0097C682 /* AlertInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A823F1B50110D0097C682 /* AlertInterfaceController.swift */; };
 		C7D0B4A61B4C0D2200288F6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4A51B4C0D2200288F6F /* AppDelegate.swift */; };
 		C7D0B4A81B4C0D2200288F6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B4A71B4C0D2200288F6F /* ViewController.swift */; };
 		C7D0B4AD1B4C0D2200288F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B4AC1B4C0D2200288F6F /* Assets.xcassets */; };
@@ -104,6 +107,9 @@
 		C72B276A1B4E57C900EA6EF2 /* PickerMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerMenuInterfaceController.swift; sourceTree = "<group>"; };
 		C74385511B4FC17F00A523DA /* AudioInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioInterfaceController.swift; sourceTree = "<group>"; };
 		C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMenuInterfaceController.swift; sourceTree = "<group>"; };
+		C74A823B1B4FE9F20097C682 /* NetworkingInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingInterfaceController.swift; sourceTree = "<group>"; };
+		C74A823D1B5005A10097C682 /* PickerCoordinatingImagesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCoordinatingImagesInterfaceController.swift; sourceTree = "<group>"; };
+		C74A823F1B50110D0097C682 /* AlertInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertInterfaceController.swift; sourceTree = "<group>"; };
 		C7D0B4A21B4C0D2200288F6F /* WWDCWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D0B4A51B4C0D2200288F6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D0B4A71B4C0D2200288F6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +183,22 @@
 				C74385531B4FC1BF00A523DA /* AudioMenuInterfaceController.swift */,
 			);
 			name = Audio;
+			sourceTree = "<group>";
+		};
+		C74A82411B5012930097C682 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C74A823B1B4FE9F20097C682 /* NetworkingInterfaceController.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		C74A82421B50129D0097C682 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C74A823F1B50110D0097C682 /* AlertInterfaceController.swift */,
+			);
+			name = Alert;
 			sourceTree = "<group>";
 		};
 		C7D0B4991B4C0D2200288F6F = {
@@ -255,7 +277,9 @@
 				C7F5423D1B4FB28E00E5B55D /* Movie */,
 				C74385501B4FC0F900A523DA /* Audio */,
 				C7F5423E1B4FB79900E5B55D /* Audio Recording */,
+				C74A82411B5012930097C682 /* Networking */,
 				C7D0B5001B4C10FE00288F6F /* MenuTableRowController.swift */,
+				C74A82421B50129D0097C682 /* Alert */,
 				C7D0B4E21B4C0D2300288F6F /* ExtensionDelegate.swift */,
 				C7D0B4E41B4C0D2300288F6F /* NotificationController.swift */,
 				C7D0B4E61B4C0D2300288F6F /* GlanceController.swift */,
@@ -280,8 +304,8 @@
 		C7F5423D1B4FB28E00E5B55D /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				C727F7591B4EC7F500AB6D13 /* MovieInterfaceController.swift */,
 				C7F5423B1B4FB1F200E5B55D /* MovieMenuInterfaceController.swift */,
+				C727F7591B4EC7F500AB6D13 /* MovieInterfaceController.swift */,
 			);
 			name = Movie;
 			sourceTree = "<group>";
@@ -301,6 +325,7 @@
 				C7D0B5031B4C140000288F6F /* PickerListStyleInterfaceController.swift */,
 				C7F57F071B4E5F84000B14C4 /* PickerStackStyleInterfaceController.swift */,
 				C7F57F091B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift */,
+				C74A823D1B5005A10097C682 /* PickerCoordinatingImagesInterfaceController.swift */,
 			);
 			name = Picker;
 			sourceTree = "<group>";
@@ -550,6 +575,8 @@
 				C727F75A1B4EC7F500AB6D13 /* MovieInterfaceController.swift in Sources */,
 				C7F57F0A1B4E63C0000B14C4 /* PickerSequenceStyleInterfaceController.swift in Sources */,
 				C7D0B5041B4C140000288F6F /* PickerListStyleInterfaceController.swift in Sources */,
+				C74A823E1B5005A10097C682 /* PickerCoordinatingImagesInterfaceController.swift in Sources */,
+				C74A823C1B4FE9F20097C682 /* NetworkingInterfaceController.swift in Sources */,
 				C7D0B4E51B4C0D2300288F6F /* NotificationController.swift in Sources */,
 				C74385541B4FC1BF00A523DA /* AudioMenuInterfaceController.swift in Sources */,
 				C7D0B4E31B4C0D2300288F6F /* ExtensionDelegate.swift in Sources */,
@@ -557,6 +584,7 @@
 				C74385521B4FC17F00A523DA /* AudioInterfaceController.swift in Sources */,
 				C727F75C1B4F946600AB6D13 /* AudioRecordingInterfaceController.swift in Sources */,
 				C7D0B4E91B4C0D2300288F6F /* ComplicationController.swift in Sources */,
+				C74A82401B50110D0097C682 /* AlertInterfaceController.swift in Sources */,
 				C7D0B4E11B4C0D2300288F6F /* InterfaceController.swift in Sources */,
 				C7D0B5011B4C10FE00288F6F /* MenuTableRowController.swift in Sources */,
 				C7F5423C1B4FB1F200E5B55D /* MovieMenuInterfaceController.swift in Sources */,

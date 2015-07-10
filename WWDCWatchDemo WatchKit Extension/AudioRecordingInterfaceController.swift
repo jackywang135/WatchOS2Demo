@@ -16,8 +16,8 @@ class AudioRecordingInterfaceController: WKInterfaceController {
 
     @IBAction func startRecording() {
         let audioFileURL = prepareFilePathURL()
-        presentAudioRecordingControllerWithOutputURL(audioFileURL, preset: .NarrowBandSpeech, maximumDuration: 30.0, actionTitle: "save") { didSave, error in
-            guard error == nil && didSave == true else {
+        presentAudioRecordingControllerWithOutputURL(audioFileURL, preset: .NarrowBandSpeech, maximumDuration: 30.0, actionTitle: "Save") { didSave, error in
+            guard error == nil else {
                  self.showFailure()
                  return
             }

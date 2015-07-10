@@ -13,19 +13,20 @@ import Foundation
 class MovieMenuInterfaceController: WKInterfaceController {
 
     let url = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("jump", ofType: "MOV")!)
+    
+    var lastEndTime: NSTimeInterval = 0
 
     @IBAction func presentMediaPlayerController() {
         presentMediaPlayerControllerWithURL(url, options:[
             
             WKMediaPlayerControllerOptionsAutoplayKey: NSNumber(bool: true),
             WKMediaPlayerControllerOptionsVideoGravityKey: NSNumber(integer:WKVideoGravity.ResizeAspectFill.rawValue),
-            WKMediaPlayerControllerOptionsStartTimeKey: NSNumber(float: 2.0),
+            WKMediaPlayerControllerOptionsStartTimeKey: NSNumber(double: lastEndTime),
             WKMediaPlayerControllerOptionsLoopsKey: NSNumber(bool: true)
             
             ]) { didPlayToEnd, endTime, error in
-            
-                //DidPlayToEnd: indicating whether the file played to end 
-
+                guard error == nil else { return }
+                self.lastEndTime = didPlayToEnd ? 0 : endTime
         }
     }
 }
