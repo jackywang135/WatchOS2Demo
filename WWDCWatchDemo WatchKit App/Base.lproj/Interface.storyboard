@@ -35,6 +35,11 @@
                                 <segue destination="p53-sQ-o9O" kind="push" id="J8F-r7-nL6"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Animation" id="AYo-iu-nKf">
+                            <connections>
+                                <segue destination="Yrq-Gw-Gq3" kind="push" id="OZx-bv-tDa"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -216,6 +221,43 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="450" y="280.5"/>
+        </scene>
+        <!--AnimationInterfaceController-->
+        <scene sceneID="iGt-dd-iAN">
+            <objects>
+                <controller identifier="AnimationInterfaceController" hidesWhenLoading="NO" id="Yrq-Gw-Gq3" customClass="AnimationInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="nKn-3K-Rmr">
+                            <items>
+                                <button width="43" alignment="left" verticalAlignment="bottom" title="Scale" id="iQ8-1s-rNg">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="scale" destination="Yrq-Gw-Gq3" id="UZB-RC-asJ"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" verticalAlignment="bottom" title="Fade" id="Mj1-zE-iew">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="fade" destination="Yrq-Gw-Gq3" id="AQg-f9-bas"/>
+                                    </connections>
+                                </button>
+                                <button width="43" alignment="right" verticalAlignment="bottom" title="Move" id="DXz-nI-Gg1">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="move" destination="Yrq-Gw-Gq3" id="c3g-vo-D4h"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <imageView width="60" height="60" alignment="center" verticalAlignment="center" image="songBro" id="UiP-bg-RBt"/>
+                    </items>
+                    <connections>
+                        <outlet property="fade" destination="Mj1-zE-iew" id="8Vh-VR-sEy"/>
+                        <outlet property="image" destination="UiP-bg-RBt" id="d0t-1p-duy"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="691" y="280.5"/>
         </scene>
         <!--PickerCoordinatingImagesInterfaceController-->
         <scene sceneID="35R-Q4-dTl">
