@@ -15,8 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="P7Z-QA-cEI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXU-6n-3X0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JXU-6n-3X0" firstAttribute="height" secondItem="P7Z-QA-cEI" secondAttribute="height" id="85v-Ab-YSO"/>
+                            <constraint firstAttribute="centerY" secondItem="JXU-6n-3X0" secondAttribute="centerY" id="aZf-g9-5C1"/>
+                            <constraint firstAttribute="centerX" secondItem="JXU-6n-3X0" secondAttribute="centerX" id="l2T-Ha-TVa"/>
+                            <constraint firstItem="JXU-6n-3X0" firstAttribute="width" secondItem="P7Z-QA-cEI" secondAttribute="width" id="sTE-tT-eda"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="JXU-6n-3X0" id="tve-28-uog"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prA-LO-Vld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

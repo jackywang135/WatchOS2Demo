@@ -14,7 +14,7 @@ class AnimationInterfaceController: WKInterfaceController {
     @IBOutlet var image: WKInterfaceImage!
     
     @IBAction func scale() {
-        self.animateWithDuration(0.5) {
+        animateWithDuration(0.5) {
             self.image.setWidth(30)
             self.image.setHeight(30)
         }
@@ -33,7 +33,7 @@ class AnimationInterfaceController: WKInterfaceController {
     }
     
     @IBAction func fade() {
-        self.animateWithDuration(0.5) {
+        animateWithDuration(0.5) {
             self.image.setAlpha(0)
         }
         delay(0.5) {
@@ -44,7 +44,7 @@ class AnimationInterfaceController: WKInterfaceController {
     }
     
     @IBAction func move() {
-        self.animateWithDuration(0.5) {
+        animateWithDuration(0.5) {
             self.image.setHorizontalAlignment(.Right)
         }
         delay(0.5) {
@@ -58,4 +58,8 @@ class AnimationInterfaceController: WKInterfaceController {
             }
         }
     }
+}
+
+func delay(delay: NSTimeInterval, closure:() -> ()) {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
 }

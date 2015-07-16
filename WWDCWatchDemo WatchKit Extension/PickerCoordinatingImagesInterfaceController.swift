@@ -23,7 +23,7 @@ class PickerCoordinatingImagesInterfaceController: WKInterfaceController {
         }
         let pickerItems: [WKPickerItem] = (0..<24).map {
             let item = WKPickerItem()
-            item.title = "\($0)"
+            item.title = "\( Int(Double($0) * 100.0 / 23.0))%"
             return item
         }
         let progressImage = UIImage.animatedImageWithImages(images, duration: 0.0)

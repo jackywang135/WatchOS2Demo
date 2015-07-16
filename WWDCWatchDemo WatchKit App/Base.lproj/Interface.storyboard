@@ -5,6 +5,92 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8077.2"/>
     </dependencies>
     <scenes>
+        <!--AccelerometerInterfaceController-->
+        <scene sceneID="imu-iu-UDY">
+            <objects>
+                <controller identifier="AccelerometerInterfaceController" hidesWhenLoading="NO" id="P89-RN-9Yn" customClass="AccelerometerInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="0.29999999999999999" alignment="center" text="X" id="GWd-nm-xlf"/>
+                        <label width="1" height="0.29999999999999999" alignment="left" text="Y" id="Abl-3e-oMd"/>
+                        <label width="1" height="0.29999999999999999" alignment="left" text="Z" id="lcX-xo-BoK"/>
+                    </items>
+                    <connections>
+                        <outlet property="labelX" destination="GWd-nm-xlf" id="U02-jr-EI8"/>
+                        <outlet property="labelY" destination="Abl-3e-oMd" id="NZB-84-nsF"/>
+                        <outlet property="labelZ" destination="lcX-xo-BoK" id="59W-L8-i9Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-217" y="58.5"/>
+        </scene>
+        <!--TapticInterfaceController-->
+        <scene sceneID="v4B-tg-Kaf">
+            <objects>
+                <controller identifier="TapticInterfaceController" hidesWhenLoading="NO" id="mzf-tB-cyA" customClass="TapticInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <picker width="1" height="100" alignment="left" id="B57-ns-Ifq">
+                            <connections>
+                                <action selector="pickerItemSelected:" destination="mzf-tB-cyA" id="o6X-Qa-SXP"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Tap Me Baby" id="Qko-aW-k1K">
+                            <connections>
+                                <action selector="tap" destination="mzf-tB-cyA" id="aJc-yh-AxJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="B57-ns-Ifq" id="jOS-83-Ofk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-407" y="633.5"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="qz5-FV-aGV">
+            <objects>
+                <controller hidesWhenLoading="NO" id="hAj-4G-wGL">
+                    <items>
+                        <button width="1" alignment="left" title="Accelerometer" id="UnY-sb-uVg">
+                            <connections>
+                                <segue destination="P89-RN-9Yn" kind="push" id="Me8-ew-det"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Gyroscope" id="B2c-Rz-fSd">
+                            <connections>
+                                <segue destination="OUo-Nm-hOd" kind="push" id="n2r-1Q-nc2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pedometer" id="sV0-J1-gWU">
+                            <connections>
+                                <segue destination="GZ3-1Q-FEU" kind="push" id="X5Z-9W-oIu"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-217" y="-171.5"/>
+        </scene>
+        <!--OpenSystemURLInterfaceController-->
+        <scene sceneID="Sfb-8b-Bbq">
+            <objects>
+                <controller identifier="OpenSystemURLInterfaceController" hidesWhenLoading="NO" id="kcf-0l-pLJ" customClass="OpenSystemURLInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Phone" id="aXw-zL-h0q">
+                            <connections>
+                                <action selector="phone" destination="kcf-0l-pLJ" id="rJZ-uV-4GL"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SMS" id="hQb-2X-Uj6">
+                            <connections>
+                                <action selector="sms" destination="kcf-0l-pLJ" id="Yzt-zo-yIS"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-217" y="710.5"/>
+        </scene>
         <!--InterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
@@ -20,14 +106,14 @@
                                 <segue destination="FJo-7O-QHE" kind="push" id="fIG-vp-IIU"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Audio" id="c4R-Xc-k2e">
-                            <connections>
-                                <segue destination="OEb-i6-vJ2" kind="push" id="REv-UT-Sev"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="left" title="Recording" id="ZPh-s9-9jG">
                             <connections>
                                 <segue destination="Bg6-Ge-AIw" kind="push" id="OZk-TD-fof"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Audio" id="c4R-Xc-k2e">
+                            <connections>
+                                <segue destination="OEb-i6-vJ2" kind="push" id="REv-UT-Sev"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Alert" id="nGw-Mb-5CO">
@@ -38,6 +124,26 @@
                         <button width="1" alignment="left" title="Animation" id="AYo-iu-nKf">
                             <connections>
                                 <segue destination="Yrq-Gw-Gq3" kind="push" id="OZx-bv-tDa"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Networking" id="598-XG-tyW">
+                            <connections>
+                                <segue destination="Ci3-1m-w0z" kind="push" id="dpx-5d-Mgg"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Open System" id="lca-C2-Bxm">
+                            <connections>
+                                <segue destination="kcf-0l-pLJ" kind="push" id="K3v-bI-ppy"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Taptics" id="rlW-GM-ZEl">
+                            <connections>
+                                <segue destination="mzf-tB-cyA" kind="push" id="3xD-dy-F4a"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Core Motion" id="kz4-X3-0RF">
+                            <connections>
+                                <segue destination="hAj-4G-wGL" kind="push" id="cb0-pi-Fvf"/>
                             </connections>
                         </button>
                     </items>
@@ -73,7 +179,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="114" y="-214.5"/>
+            <point key="canvasLocation" x="-476" y="-704.5"/>
         </scene>
         <!--PickerStackStyleInterfaceController-->
         <scene sceneID="OhZ-Qk-uWz">
@@ -88,7 +194,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="536" y="-579.5"/>
+            <point key="canvasLocation" x="146" y="-913.5"/>
         </scene>
         <!--PickerSequenceStyleInterfaceController-->
         <scene sceneID="28E-14-Njm">
@@ -107,7 +213,26 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="716" y="-579.5"/>
+            <point key="canvasLocation" x="446" y="-842.5"/>
+        </scene>
+        <!--NetworkingInterfaceController-->
+        <scene sceneID="Mhp-jO-puW">
+            <objects>
+                <controller identifier="NetworkingInterfaceController" hidesWhenLoading="NO" id="Ci3-1m-w0z" customClass="NetworkingInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <imageView width="60" height="60" alignment="center" id="059-Zu-EC8"/>
+                        <button width="1" alignment="left" title="Fetch Image" id="fXM-j4-hL5">
+                            <connections>
+                                <action selector="fetchImage" destination="Ci3-1m-w0z" id="Mva-12-Z1a"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="059-Zu-EC8" id="AjK-ig-hUm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="340" y="815.5"/>
         </scene>
         <!--AlertInterfaceController-->
         <scene sceneID="4J1-aH-k05">
@@ -137,7 +262,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="450" y="630.5"/>
+            <point key="canvasLocation" x="527" y="727.5"/>
         </scene>
         <!--PickerListStyleInterfaceController-->
         <scene sceneID="jaO-yl-dmS">
@@ -152,7 +277,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="352" y="-579.5"/>
+            <point key="canvasLocation" x="-180" y="-842.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -165,7 +290,7 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="299" y="1388"/>
+            <point key="canvasLocation" x="-844" y="-148"/>
         </scene>
         <!--AudioRecordingInterfaceController-->
         <scene sceneID="gHw-sb-zBa">
@@ -180,7 +305,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="764" y="616.5"/>
+            <point key="canvasLocation" x="700" y="651.5"/>
         </scene>
         <!--MovieMenuInterfaceController-->
         <scene sceneID="5Zt-S6-Hxy">
@@ -200,7 +325,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="412" y="-29.5"/>
+            <point key="canvasLocation" x="458" y="-171.5"/>
         </scene>
         <!--AudioMenuInterfaceController-->
         <scene sceneID="sUz-Cl-hEz">
@@ -212,15 +337,33 @@
                                 <action selector="modal" destination="OEb-i6-vJ2" id="UtR-Uw-lEV"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Background" id="g9A-R5-rE0">
-                            <connections>
-                                <action selector="background" destination="OEb-i6-vJ2" id="kdD-Tq-rIC"/>
-                            </connections>
-                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="450" y="280.5"/>
+            <point key="canvasLocation" x="464" y="58.5"/>
+        </scene>
+        <!--AudioBackgroundPlayerInterfaceController-->
+        <scene sceneID="VAY-Fy-5bb">
+            <objects>
+                <controller identifier="AudioBackgroundPlayerInterfaceController" hidesWhenLoading="NO" id="f11-FY-cvJ" customClass="AudioBackgroundPlayerInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Play" id="dpv-5x-QPS">
+                            <connections>
+                                <action selector="play" destination="f11-FY-cvJ" id="IaO-SM-8QE"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Pause" id="wIo-Gp-bNl">
+                            <connections>
+                                <action selector="pause" destination="f11-FY-cvJ" id="rdz-hD-5nT"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="play" destination="dpv-5x-QPS" id="MGT-x7-mEW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="622" y="58.5"/>
         </scene>
         <!--AnimationInterfaceController-->
         <scene sceneID="iGt-dd-iAN">
@@ -229,7 +372,7 @@
                     <items>
                         <group width="1" alignment="center" verticalAlignment="bottom" id="nKn-3K-Rmr">
                             <items>
-                                <button width="43" alignment="left" verticalAlignment="bottom" title="Scale" id="iQ8-1s-rNg">
+                                <button alignment="left" verticalAlignment="bottom" title="Scale" id="iQ8-1s-rNg">
                                     <fontDescription key="font" type="system" pointSize="10"/>
                                     <connections>
                                         <action selector="scale" destination="Yrq-Gw-Gq3" id="UZB-RC-asJ"/>
@@ -241,7 +384,7 @@
                                         <action selector="fade" destination="Yrq-Gw-Gq3" id="AQg-f9-bas"/>
                                     </connections>
                                 </button>
-                                <button width="43" alignment="right" verticalAlignment="bottom" title="Move" id="DXz-nI-Gg1">
+                                <button alignment="right" verticalAlignment="bottom" title="Move" id="DXz-nI-Gg1">
                                     <fontDescription key="font" type="system" pointSize="10"/>
                                     <connections>
                                         <action selector="move" destination="Yrq-Gw-Gq3" id="c3g-vo-D4h"/>
@@ -257,18 +400,15 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="691" y="280.5"/>
+            <point key="canvasLocation" x="-40" y="823.5"/>
         </scene>
         <!--PickerCoordinatingImagesInterfaceController-->
         <scene sceneID="35R-Q4-dTl">
             <objects>
                 <controller identifier="PickerCoordinatingImagesInterfaceController" hidesWhenLoading="NO" id="zF1-VU-6iz" customClass="PickerCoordinatingImagesInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
                     <items>
-                        <group width="120" height="120" alignment="center" verticalAlignment="center" backgroundImage="Play0" contentMode="scaleAspectFill" id="ds2-7u-Bx3">
-                            <items>
-                                <picker width="70" height="70" alignment="center" verticalAlignment="center" id="0He-a5-zqT"/>
-                            </items>
-                        </group>
+                        <picker width="70" height="70" alignment="center" verticalAlignment="center" id="0He-a5-zqT"/>
+                        <group width="80" height="80" alignment="center" verticalAlignment="center" backgroundImage="Play0" contentMode="scaleAspectFill" id="ds2-7u-Bx3"/>
                     </items>
                     <connections>
                         <outlet property="group" destination="ds2-7u-Bx3" id="VKf-Fm-gmr"/>
@@ -276,7 +416,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="882" y="-573.5"/>
+            <point key="canvasLocation" x="694" y="-704.5"/>
         </scene>
         <!--MovieInterfaceController-->
         <scene sceneID="WUg-wq-2W0">
@@ -295,7 +435,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="598" y="-29.5"/>
+            <point key="canvasLocation" x="622" y="-171.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -311,14 +451,52 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="244" y="1575"/>
+            <point key="canvasLocation" x="146" y="875"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="WWDCWatchDemo_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="511" y="1603"/>
+            <point key="canvasLocation" x="1051" y="-101"/>
+        </scene>
+        <!--GyroscopeInterfaceController-->
+        <scene sceneID="nne-9E-1Yo">
+            <objects>
+                <controller identifier="GyroscopeInterfaceController" hidesWhenLoading="NO" id="OUo-Nm-hOd" customClass="GyroscopeInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="0.29999999999999999" alignment="center" text="X" id="SbM-Uy-hmk"/>
+                        <label width="1" height="0.29999999999999999" alignment="left" text="Y" id="J5q-ZA-uv6"/>
+                        <label width="1" height="0.29999999999999999" alignment="left" text="Z" id="cgK-q1-pdE"/>
+                    </items>
+                    <connections>
+                        <outlet property="labelX" destination="SbM-Uy-hmk" id="BQr-eL-uw2"/>
+                        <outlet property="labelY" destination="J5q-ZA-uv6" id="T55-X6-mna"/>
+                        <outlet property="labelZ" destination="cgK-q1-pdE" id="Quz-Iv-cDK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-375" y="58.5"/>
+        </scene>
+        <!--PedometerInterfaceController-->
+        <scene sceneID="bOa-Or-VtG">
+            <objects>
+                <controller identifier="PedometerInterfaceController" hidesWhenLoading="NO" id="GZ3-1Q-FEU" customClass="PedometerInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="0.25" alignment="left" text="Steps" id="fYj-CZ-ZaD"/>
+                        <label width="1" height="0.25" alignment="left" text="Distance" id="UeG-6C-sv3"/>
+                        <label width="1" height="0.25" alignment="left" text="Ascended" id="hqK-YB-2rv"/>
+                        <label width="1" height="0.25" alignment="left" text="Descended" id="7IX-1v-cIg"/>
+                    </items>
+                    <connections>
+                        <outlet property="ascendedLabel" destination="hqK-YB-2rv" id="BzF-Vo-FaQ"/>
+                        <outlet property="descendedLabel" destination="7IX-1v-cIg" id="Jpd-52-qt1"/>
+                        <outlet property="distanceLabel" destination="UeG-6C-sv3" id="bRA-ei-jea"/>
+                        <outlet property="stepsLabel" destination="fYj-CZ-ZaD" id="i6m-jm-5HA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-375" y="-172.5"/>
         </scene>
     </scenes>
 </document>
