@@ -126,16 +126,6 @@
                                 <segue destination="Yrq-Gw-Gq3" kind="push" id="OZx-bv-tDa"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Networking" id="598-XG-tyW">
-                            <connections>
-                                <segue destination="Ci3-1m-w0z" kind="push" id="dpx-5d-Mgg"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Open System" id="lca-C2-Bxm">
-                            <connections>
-                                <segue destination="kcf-0l-pLJ" kind="push" id="K3v-bI-ppy"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="left" title="Taptics" id="rlW-GM-ZEl">
                             <connections>
                                 <segue destination="mzf-tB-cyA" kind="push" id="3xD-dy-F4a"/>
@@ -144,6 +134,16 @@
                         <button width="1" alignment="left" title="Core Motion" id="kz4-X3-0RF">
                             <connections>
                                 <segue destination="hAj-4G-wGL" kind="push" id="cb0-pi-Fvf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Open System" id="lca-C2-Bxm">
+                            <connections>
+                                <segue destination="kcf-0l-pLJ" kind="push" id="K3v-bI-ppy"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Networking" id="598-XG-tyW">
+                            <connections>
+                                <segue destination="Ci3-1m-w0z" kind="push" id="dpx-5d-Mgg"/>
                             </connections>
                         </button>
                     </items>
@@ -312,14 +312,14 @@
             <objects>
                 <controller identifier="MovieMenuInterfaceController" hidesWhenLoading="NO" id="FJo-7O-QHE" customClass="MovieMenuInterfaceController" customModule="WWDCWatchDemo_WatchKit_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Movie Player Embeded in UI" id="HX4-0u-cOc">
-                            <connections>
-                                <segue destination="8cs-4N-iE5" kind="push" id="PhK-Aa-U42"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="left" title="Present Movie Player Modally " id="TCO-n4-JQm">
                             <connections>
                                 <action selector="presentMediaPlayerController" destination="FJo-7O-QHE" id="jWR-ud-P13"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Movie Player Embeded in UI" id="HX4-0u-cOc">
+                            <connections>
+                                <segue destination="8cs-4N-iE5" kind="push" id="PhK-Aa-U42"/>
                             </connections>
                         </button>
                     </items>

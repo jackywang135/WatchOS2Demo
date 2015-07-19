@@ -12,7 +12,7 @@ import Foundation
 
 class MovieMenuInterfaceController: WKInterfaceController {
 
-    let url = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("jump", ofType: "MOV")!)
+    let url = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("rafting", ofType: "mp4")!)
     
     var lastEndTime: NSTimeInterval = 0
 
